@@ -1,5 +1,5 @@
 /* Gym Traker offline service worker */
-const CACHE = 'gymtraker-cache-v1';
+const CACHE = 'gymtraker-cache-v2';
 const PRECACHE_URLS = [
   './',
   './index.html',

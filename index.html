@@ -416,27 +416,39 @@
     }
 
 
-    /* iOS: safe-area + evitar franjas blancas */
-    html {
-      background: var(--bg0);
+    /* iOS: capa fija de fondo para evitar blanco en bounce */
+    .ios-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: radial-gradient(1200px 700px at 20% -10%, rgba(138,43,226,0.18), transparent 60%),
+                  radial-gradient(900px 520px at 85% 0%, rgba(255,0,60,0.12), transparent 55%),
+                  repeating-linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 1px, transparent 1px, transparent 10px),
+                  linear-gradient(180deg, var(--bg0), #020103 70%);
       background-color: #050407;
+      transform: translateZ(0);
+      pointer-events: none;
+    }
+
+    html, body {
       height: 100%;
+      background-color: #050407;
+      overscroll-behavior: none;
     }
 
     body {
       min-height: 100vh;
-      background-color: #050407;
       padding-top: env(safe-area-inset-top);
       padding-bottom: env(safe-area-inset-bottom);
       padding-left: env(safe-area-inset-left);
       padding-right: env(safe-area-inset-right);
-      overscroll-behavior-y: none;
       -webkit-overflow-scrolling: touch;
     }
 
   </style>
 </head>
 <body>
+  <div class="ios-bg" aria-hidden="true"></div>
   <div class="container">
     <header>
       <h1>Gym Tracker (local) v3.3 — Gothic</h1>
@@ -1840,7 +1852,7 @@
     initUIAfterLoad();
   
 
-    // PWA offline: register service worker (works on https, GitHub Pages)
+    // PWA offline: register service worker
     (function(){
       if (!('serviceWorker' in navigator)) return;
       const isSecure = (location.protocol === 'https:' || location.hostname === 'localhost');
