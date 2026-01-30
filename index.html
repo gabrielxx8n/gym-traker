@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gym Traker</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAFZElEQVR42u2XW2xUVRSGv306lw7TmZLSdqDTC21pK4XByr0KaKqNqWCIJqYoXhJ5N0YNEnjQN9QoMYHEyIsID0ViRFOwRsEoCJRbEdRAhXaEUi29DMxMp9OZM2cvH3qBBhBKJLzwJyfnZJ+11v7XOmvv/R8lIsI9hME9xn0Cd0RgpG20CHr4+U5b6Y4IKKUAOHnwBCcPnBgzdtcIjGQYDkcItgcBaP35GK37jgIQbA8SCUfGXY1xVyASjdHU+B0A/7ReoKu1A4Cmxu8IR2N3rwJaD2V1ZH8LqZiJaI3uCWF1hxCtScVMjvzSMsb2fyVgGApLC6cOtVA9N4AyDNxXesgId6MMg+q5AU4dPE5KC4Zx+/1g+69vfvVbKgxDIQpOtfWw940PeGT+T8w2I6CEt1e9w4HmI+QUlSGGQo1WQUYb9GZNalxfao3WGqUUhmEMX4p4PEnznuPMs2KUh/to2bqDsikDlE0eoGXLDsojIebpGIf3HiceT2IYV/2VUqNxr1tRI2eB1hrDuMonGo1z+vdW+qNRCp1OGj7fzd9XktQkeqk4fQz8OXRNSAIwecABnT20Tp/Lj85s/BPtrHhlGRcSCTweDw/MrMDjcY1JcmQuJUNAKUUikaT5l6O0nj5HsPUcZ//4E4fLhddp59jhUxQUTyPr4j8UEqIq10G22w0IvbEBTnQn6ZAsQgVT6AieY96CWYQTKZLxAcpnlDO1fBrlldOoXjQPp9PByJxKtCUog8PNv9L4ZSN/nTlLfzRKODpIOBymt7sLy1KkmZolDz7IMtVPcCDIkQv9vDR9CiBsO93F/EIPJROm0igZ7Dv5K5Y9jTSbkJ0zmcxML5medNweLyUVZSx77mkWLKwaIpG0tDRs38M3DTvpv9SBTsbpvBSms+s8CcJ4bVmY2k5SX6Qi009NVjZcasPuclHgnwRAR2cfZjwOvlJ+DPVyJtyJU+VjTzOJpEI4ycQ/uYg830TSHC4yfH6Wv/AMz9fXYlu//jO2fPwpyhrElmZwOXyZATNGbe1iFj32CBUzZ+L1ZrBvz14+2bCRFjOBy+bA5ZiAM5EC4KzDRdy0iJsJLiUHWbvuXZY88TjRSIwzv//G/p8OsOeH/fT0ZZCVOZHUufOcaD7OX+0dEKioE7+3UrLdpQJumV5WJU27muRG2PzRJikGmZXulQVlM6T+4Yek/uEqWVA2Q2ale6UYZPOGTTf0/XZXk0wvqxJwS7a7VPzeSglU1AlrVr8veXlzZGp+QFa/uU5CfSEREbEsS0zTlFQqJaZpimmaEu/vl5XVj0qRskvAVyA1BYVSU1AoAV+BFCmbrKx+VOL9sVH7EV/LskREJNR3WVa/uU6m5gckL2+OrFn9viAi0tsXklDoyijbVCo1hr3WWrS2JBYZkFV19VJi2GVhSYmsLS2WtaXFsrCkVEoNu7xaVy+xSGzYXo+JcW3MUOiK9A4nyrWGqVTqOsdrnRu27xQXyGwMWezzy7NVlfJsVaUs9vllNkpcIA0NX90wiZFErh3XWsvoPnCzM33kXU93Ny+9+DIvr6jnz93f0/ztLhIuJwKkxxMsfGoZ5Utr2frFDrZt20pObu4tYyqlhs6C/xITIoJhGLS3t/HWW69T+2QdH56/QM+ur5nmcAPQFovhCTzAylWryM33097eRq7PN7ql30zQjNmKb4VEYhC73cFgfJBDhw7yd/Aiuze+B6JY+trb5BXnU11dTbrLhWkmcTrTb1vpjAuWNdQjXd29sqK2RlbU1khXd+/oyhkvbONWMIZCWxa+nElk5xYBgi9nEtqyMNLSxq2IbHekiofvjy1dft3YuAXu/V+z+wTuNYF/Ab2m5GLgea/EAAAAAElFTkSuQmCC">
+  <style>
+    :root {
+      --bg0: #050407;
+      --bg1: #0a0910;
+      --bg2: #0e0c16;
+      --bg3: #161225;
+
+      --text: #f2f1f6;
+      --muted: rgba(242,241,246,0.72);
+      --muted2: rgba(242,241,246,0.55);
+
+      --accent: #ff003c;     /* crimson neon */
+      --accent2: #8a2be2;    /* gothic violet */
+      --good: #00ff88;
+      --warn: #ffaa00;
+      --bad: #ff2a2a;
+
+      --shadow: 0 18px 60px rgba(0,0,0,0.62);
+      --ring: 0 0 0 3px rgba(255,0,60,0.16);
+
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+
+      background:
+        radial-gradient(1200px 700px at 20% -10%, rgba(138,43,226,0.18), transparent 60%),
+        radial-gradient(900px 520px at 85% 0%, rgba(255,0,60,0.12), transparent 55%),
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 1px, transparent 1px, transparent 10px),
+        linear-gradient(180deg, var(--bg0), #020103 70%);
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+
+    header {
+      background: linear-gradient(135deg, rgba(10,9,16,0.92), rgba(10,9,16,0.72));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 2px solid rgba(255,0,60,0.55);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      margin-bottom: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: -40% -30% auto -30%;
+      height: 120px;
+      background: linear-gradient(90deg, transparent, rgba(255,0,60,0.18), transparent);
+      transform: rotate(-8deg);
+      filter: blur(2px);
+      pointer-events: none;
+    }
+
+    h1 {
+      margin: 0 0 6px 0;
+      font-family: "Georgia", "Palatino Linotype", "Times New Roman", serif;
+      font-size: 1.42rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--text);
+      text-shadow: 0 0 14px rgba(255,0,60,0.18);
+    }
+
+    .sub { color: var(--muted); font-size: 0.95rem; }
+
+    .banner {
+      display: none;
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,170,0,0.25);
+      background: rgba(255,170,0,0.08);
+      color: rgba(255,220,170,0.95);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 10px 0;
+      background: rgba(5,4,7,0.70);
+      backdrop-filter: blur(12px);
+    }
+
+    .tab-btn {
+      appearance: none;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: linear-gradient(180deg, rgba(22,18,37,0.88), rgba(10,9,16,0.72));
+      color: var(--muted);
+      padding: 9px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.12s ease, border-color 0.12s ease, color 0.12s ease, box-shadow 0.12s ease;
+      font-weight: 900;
+      font-size: 0.86rem;
+      letter-spacing: 0.3px;
+      user-select: none;
+    }
+
+    .tab-btn:hover {
+      border-color: rgba(255,0,60,0.45);
+      color: var(--text);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 25px rgba(255,0,60,0.10);
+    }
+
+    .tab-btn.active {
+      border-color: rgba(255,0,60,0.75);
+      color: #14060a;
+      background: linear-gradient(180deg, rgba(255,0,60,1), rgba(200,0,50,1));
+      box-shadow: 0 14px 30px rgba(255,0,60,0.18);
+    }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(10,9,16,0.92), rgba(10,9,16,0.72));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .panel h2 {
+      margin: 0 0 12px 0;
+      font-family: "Georgia", "Palatino Linotype", "Times New Roman", serif;
+      font-size: 1.08rem;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      color: rgba(255,0,60,0.95);
+      text-shadow: 0 0 14px rgba(255,0,60,0.15);
+    }
+
+    .muted { color: var(--muted); }
+    .muted2 { color: var(--muted2); }
+
+    .form-group { margin-bottom: 12px; }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-weight: 950;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      background: rgba(22,18,37,0.55);
+      border: 1px solid rgba(255,255,255,0.09);
+      color: var(--text);
+      border-radius: 12px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: rgba(255,0,60,0.55);
+      box-shadow: var(--ring);
+    }
+
+    input.invalid {
+      border-color: rgba(255,42,42,0.70) !important;
+      box-shadow: 0 0 0 3px rgba(255,42,42,0.12) !important;
+    }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    .btn {
+      appearance: none;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: linear-gradient(180deg, rgba(255,0,60,1), rgba(200,0,50,1));
+      color: #14060a;
+      padding: 11px 14px;
+      border-radius: 12px;
+      font-weight: 1000;
+      cursor: pointer;
+      letter-spacing: 0.2px;
+      transition: transform 0.12s ease, filter 0.12s ease, box-shadow 0.12s ease;
+      box-shadow: 0 14px 28px rgba(255,0,60,0.12);
+    }
+
+    .btn:hover { transform: translateY(-1px); filter: brightness(1.03); box-shadow: 0 18px 35px rgba(255,0,60,0.16); }
+
+    .btn.secondary {
+      background: linear-gradient(180deg, rgba(22,18,37,0.92), rgba(10,9,16,0.78));
+      color: var(--text);
+      border-color: rgba(255,255,255,0.10);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.35);
+    }
+
+    .btn.secondary:hover { border-color: rgba(255,0,60,0.35); }
+
+    .btn.danger {
+      background: linear-gradient(180deg, rgba(255,42,42,0.95), rgba(190,20,20,0.95));
+      color: #160404;
+      border-color: rgba(255,255,255,0.08);
+      box-shadow: 0 14px 28px rgba(255,42,42,0.12);
+    }
+
+    .btn-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .chip {
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(22,18,37,0.60);
+      color: var(--text);
+      padding: 7px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 950;
+      font-size: 0.85rem;
+      letter-spacing: 0.2px;
+    }
+
+    .chip:hover { border-color: rgba(255,0,60,0.40); box-shadow: 0 12px 24px rgba(255,0,60,0.08); }
+
+    .sticky-save { position: sticky; bottom: 10px; z-index: 9; margin-top: 12px; }
+    .sticky-save .btn { width: 100%; }
+
+    .alert {
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,0,60,0.18);
+      background: rgba(255,0,60,0.06);
+      color: var(--muted);
+      margin: 10px 0;
+    }
+
+    .ejercicio-card {
+      background: linear-gradient(180deg, rgba(10,9,16,0.92), rgba(10,9,16,0.70));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-left: 4px solid rgba(255,0,60,0.75);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+      margin-bottom: 12px;
+    }
+
+    .ej-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+    .ej-head h3 { margin: 0; font-size: 1rem; color: var(--text); font-weight: 1000; letter-spacing: 0.2px; }
+
+    .ej-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+    .kv {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      background: rgba(22,18,37,0.45);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 8px 10px;
+    }
+    .k { color: var(--muted2); font-weight: 900; text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.3px; }
+    .v { color: var(--text); font-weight: 1050; }
+
+    details {
+      margin-top: 10px;
+      background: rgba(22,18,37,0.35);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 12px;
+      border-radius: 12px;
+    }
+
+    summary { cursor: pointer; font-weight: 1050; color: rgba(255,0,60,0.95); user-select: none; letter-spacing: 0.2px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    th, td { padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.06); text-align: left; font-size: 0.9rem; }
+    th { background: rgba(5,4,7,0.72); color: rgba(255,0,60,0.95); font-weight: 1100; letter-spacing: 0.2px; }
+    tr:hover td { background: rgba(22,18,37,0.30); }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-weight: 1100;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(22,18,37,0.55);
+      color: var(--muted);
+    }
+
+    .up { background: rgba(0,255,136,0.12); color: rgba(0,255,136,0.95); }
+    .down { background: rgba(255,42,42,0.12); color: rgba(255,42,42,0.95); }
+    .eq { background: rgba(255,170,0,0.12); color: rgba(255,170,0,0.95); }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 14px;
+      transform: translateX(-50%);
+      background: rgba(10,9,16,0.95);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-left: 4px solid rgba(255,0,60,0.80);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      display: none;
+      z-index: 999;
+      max-width: 92vw;
+      font-weight: 900;
+      letter-spacing: 0.2px;
+    }
+
+    .summary-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(10,9,16,0.92), rgba(10,9,16,0.70));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 8px 0;
+      font-family: "Georgia", "Palatino Linotype", "Times New Roman", serif;
+      color: rgba(255,0,60,0.95);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .card-value { font-size: 1.75rem; font-weight: 1200; }
+    .card-label { color: var(--muted); }
+
+    .canvas-wrap {
+      background: linear-gradient(180deg, rgba(10,9,16,0.92), rgba(10,9,16,0.70));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      padding: 12px;
+      box-shadow: var(--shadow);
+      margin-bottom: 12px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 220px;
+      border-radius: 12px;
+      background: rgba(5,4,7,0.70);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .percent-table { border-radius: 12px; overflow: hidden; }
+
+    .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-weight: 1100;
+      background: rgba(255,0,60,0.10);
+      color: rgba(255,0,60,0.95);
+      border: 1px solid rgba(255,0,60,0.22);
+    }
+
+    /* ===== Body visual ===== */
+    .body-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .avatar-wrap{position:relative;background:linear-gradient(180deg,rgba(10,9,16,.92),rgba(10,9,16,.70));border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:12px;box-shadow:var(--shadow);min-height:360px;overflow:hidden}
+    .avatar-title{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:8px}
+    .avatar-title .t{font-family:"Georgia","Palatino Linotype","Times New Roman",serif;text-transform:uppercase;letter-spacing:.35px;color:rgba(255,0,60,.95);font-weight:1000}
+    .avatar{width:100%;height:320px;display:grid;place-items:center;position:relative}
+    .avatar svg{width:210px;height:320px;filter:drop-shadow(0 20px 45px rgba(0,0,0,.55));opacity:.95}
+    .spot{position:absolute;min-width:110px;max-width:44%;padding:9px 10px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(22,18,37,.55);box-shadow:0 16px 35px rgba(0,0,0,.38)}
+    .spot .k{display:block;color:var(--muted2);text-transform:uppercase;letter-spacing:.25px;font-weight:950;font-size:.78rem;margin-bottom:2px}
+    .spot .v{display:block;color:var(--text);font-weight:1200;font-size:1.02rem}
+    .spot::after{content:"";position:absolute;inset:0;border-radius:12px;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,0,60,.10)}
+    .spot.a{left:10px;top:64px}.spot.b{right:10px;top:64px}.spot.c{left:10px;top:150px}.spot.d{right:10px;top:150px}.spot.e{left:10px;bottom:18px}.spot.f{right:10px;bottom:18px}
+    .mini-charts{display:grid;grid-template-columns:1fr;gap:12px}
+    .mini{background:linear-gradient(180deg,rgba(10,9,16,.92),rgba(10,9,16,.70));border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:12px;box-shadow:var(--shadow)}
+    .mini h3{margin:0 0 8px 0;font-family:"Georgia","Palatino Linotype","Times New Roman",serif;color:rgba(255,0,60,.95);text-transform:uppercase;letter-spacing:.35px;font-size:.95rem}
+    .mini canvas{height:160px}
+    @media (max-width:900px){.body-grid{grid-template-columns:1fr}.spot{max-width:80%}}
+
+    @media (max-width: 768px) {
+      .container { padding: 12px; }
+      .form-row { grid-template-columns: 1fr; }
+      .ej-grid { grid-template-columns: 1fr; }
+      .tab-btn { padding: 8px 10px; font-size: 0.84rem; }
+      h1 { font-size: 1.22rem; }
+    }
+
+
+    /* iOS-friendly export modal */
+    #exportModal{position:fixed;inset:0;background:rgba(0,0,0,.68);display:none;align-items:center;justify-content:center;z-index:2000;padding:14px}
+    #exportModal .box{width:min(980px,96vw);max-height:92vh;overflow:auto;background:rgba(10,9,16,.96);border:1px solid rgba(255,255,255,.10);border-left:4px solid rgba(255,0,60,.80);border-radius:14px;box-shadow:0 22px 70px rgba(0,0,0,.68);padding:14px}
+    #exportModal .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px}
+    #exportModal .title{font-family:"Georgia","Palatino Linotype","Times New Roman",serif;text-transform:uppercase;letter-spacing:.35px;color:rgba(255,0,60,.95);font-weight:1000}
+    #exportModal textarea{width:100%;height:52vh;resize:vertical;background:rgba(22,18,37,.55);border:1px solid rgba(255,255,255,.10);color:var(--text);border-radius:12px;padding:10px 12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:.88rem}
+    #exportModal .hint{color:rgba(242,241,246,.70);margin-top:8px}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Gym Traker</h1>
+      <div class="sub">Gothic + Cuerpo + Export iOS-friendly (copiar/compartir).</div>
+      <div id="storageBanner" class="banner"></div>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('entrada', this)">➕ Registrar</button>
+      <button class="tab-btn" onclick="switchTab('brazos', this)">Brazos</button>
+      <button class="tab-btn" onclick="switchTab('espalda', this)">Espalda</button>
+      <button class="tab-btn" onclick="switchTab('pecho', this)">Pecho</button>
+      <button class="tab-btn" onclick="switchTab('pierna', this)">Pierna</button>
+      <button class="tab-btn" onclick="switchTab('abdomen', this)">Abdomen</button>
+      <button class="tab-btn" onclick="switchTab('cuerpo', this)">🧍 Cuerpo</button>
+      <button class="tab-btn" onclick="switchTab('resumen', this)">📈 Resumen</button>
+      <button class="tab-btn" onclick="switchTab('porcentajes', this)">🎯 Porcentajes</button>
+      <button class="tab-btn" onclick="switchTab('ajustes', this)">⚙️ Ajustes</button>
+    </div>
+
+    <div id="entrada" class="tab-content active">
+      <div class="panel">
+        <h2>Registrar sesión</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Grupo muscular</label>
+            <select id="grupoSelect" onchange="onGrupoChanged()">
+              <option value="brazos">Brazos</option>
+              <option value="espalda">Espalda</option>
+              <option value="pecho">Pecho</option>
+              <option value="pierna">Pierna</option>
+              <option value="abdomen">Abdomen</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Buscar ejercicio</label>
+            <input id="filtroEjercicio" type="text" placeholder="Escribe para filtrar…" autocomplete="off" />
+            <div class="muted2" style="margin-top:6px;">Tip: escribe “curl”, “jalón”, “press”…</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Ejercicio</label>
+          <select id="ejercicioSelect" onchange="onEjercicioSelected()">
+            <option value="">Selecciona un ejercicio</option>
+          </select>
+          <div class="chips" id="recientesChips"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Nuevo ejercicio (se suma a la lista)</label>
+          <div class="btn-row">
+            <input type="text" id="nuevoEjercicio" placeholder="Ej: Fondos en paralelas" style="flex:1; min-width: 220px;" />
+            <button class="btn secondary" onclick="agregarEjercicioCatalogo()">➕ Añadir</button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Fecha</label>
+            <input type="date" id="fecha" />
+          </div>
+          <div class="form-group">
+            <label>Peso (kg)</label>
+            <input type="number" id="peso" placeholder="Ej: 80" step="0.5" inputmode="decimal" />
+            <div class="chips" style="margin-top:8px;">
+              <span class="chip" onclick="incPeso(2.5)">+2.5</span>
+              <span class="chip" onclick="incPeso(5)">+5</span>
+              <span class="chip" onclick="incPeso(10)">+10</span>
+              <span class="chip" onclick="setPesoFromLast()">Usar último</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Series x Reps (ej: 4x8)</label>
+            <input type="text" id="series" placeholder="Ej: 4x8" inputmode="numeric" />
+            <div class="muted2" id="seriesHint" style="margin-top:6px;">Formato recomendado: 4x8.</div>
+          </div>
+          <div class="form-group">
+            <label>RPE (1-10)</label>
+            <input type="number" id="rpe" min="1" max="10" placeholder="1-10" inputmode="numeric" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Progreso</label>
+            <select id="progreso">
+              <option value="">Sin marcar</option>
+              <option value="+">⬆️ Subí</option>
+              <option value="-">⬇️ Bajé</option>
+              <option value="=">= Igual</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Notas</label>
+            <input type="text" id="notas" placeholder="Ej: buena técnica / menos descanso" />
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:6px;">
+          <button class="btn secondary" onclick="copiarUltimoRegistro()">📋 Copiar último</button>
+          <button class="btn secondary" onclick="limpiarCamposRegistro()">🧽 Limpiar</button>
+        </div>
+
+        <div class="sticky-save">
+          <button class="btn" onclick="agregarSesion()">💾 Guardar sesión</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="brazos" class="tab-content"><h2 style="margin:10px 0;">Brazos</h2><div id="tabla-brazos"></div></div>
+    <div id="espalda" class="tab-content"><h2 style="margin:10px 0;">Espalda</h2><div id="tabla-espalda"></div></div>
+    <div id="pecho" class="tab-content"><h2 style="margin:10px 0;">Pecho</h2><div id="tabla-pecho"></div></div>
+    <div id="pierna" class="tab-content"><h2 style="margin:10px 0;">Pierna</h2><div id="tabla-pierna"></div></div>
+    <div id="abdomen" class="tab-content"><h2 style="margin:10px 0;">Abdomen</h2><div id="tabla-abdomen"></div></div>
+
+    <div id="cuerpo" class="tab-content">
+      <h2 style="margin:10px 0;">🧍 Progreso corporal</h2>
+
+      <div class="panel" style="margin-bottom:12px;">
+        <h2>Registrar medición</h2>
+
+        <div class="form-row">
+          <div class="form-group"><label>Fecha</label><input type="date" id="bodyFecha" /></div>
+          <div class="form-group"><label>Peso (kg)</label><input type="number" id="bodyPeso" step="0.1" inputmode="decimal" placeholder="Ej: 82.4" /></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group"><label>% Grasa</label><input type="number" id="bodyGrasa" step="0.1" inputmode="decimal" placeholder="Ej: 15.2" /></div>
+          <div class="form-group"><label>Cintura (cm)</label><input type="number" id="bodyCintura" step="0.1" inputmode="decimal" placeholder="Ej: 82" /></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group"><label>Pecho (cm)</label><input type="number" id="bodyPecho" step="0.1" inputmode="decimal" placeholder="Ej: 104" /></div>
+          <div class="form-group"><label>Brazo (cm)</label><input type="number" id="bodyBrazo" step="0.1" inputmode="decimal" placeholder="Ej: 38" /></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group"><label>Pierna (cm)</label><input type="number" id="bodyPierna" step="0.1" inputmode="decimal" placeholder="Ej: 58" /></div>
+          <div class="form-group"><label>Notas</label><input type="text" id="bodyNotas" placeholder="Ej: en ayunas / post-entreno" /></div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn" onclick="agregarBody()">💾 Guardar medición</button>
+          <button class="btn secondary" onclick="copiarUltimaBody()">📋 Copiar última</button>
+          <button class="btn secondary" onclick="limpiarBodyForm()">🧽 Limpiar</button>
+        </div>
+      </div>
+
+      <div class="body-grid">
+        <div class="avatar-wrap">
+          <div class="avatar-title">
+            <div class="t">El cuerpo no miente</div>
+            <div class="muted2" id="bodyLastDate">Sin mediciones</div>
+          </div>
+
+          <div class="avatar">
+            <div class="spot a"><span class="k">Peso</span><span class="v" id="spotPeso">-</span></div>
+            <div class="spot b"><span class="k">% Grasa</span><span class="v" id="spotGrasa">-</span></div>
+            <div class="spot c"><span class="k">Pecho</span><span class="v" id="spotPecho">-</span></div>
+            <div class="spot d"><span class="k">Cintura</span><span class="v" id="spotCintura">-</span></div>
+            <div class="spot e"><span class="k">Brazo</span><span class="v" id="spotBrazo">-</span></div>
+            <div class="spot f"><span class="k">Pierna</span><span class="v" id="spotPierna">-</span></div>
+
+            <svg viewBox="0 0 200 320" aria-label="Silueta">
+              <defs>
+                <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="rgba(255,0,60,0.85)" />
+                  <stop offset="1" stop-color="rgba(138,43,226,0.85)" />
+                </linearGradient>
+                <radialGradient id="rg" cx="50%" cy="25%" r="70%">
+                  <stop offset="0" stop-color="rgba(255,255,255,0.14)" />
+                  <stop offset="1" stop-color="rgba(255,255,255,0.02)" />
+                </radialGradient>
+              </defs>
+              <ellipse cx="100" cy="290" rx="70" ry="18" fill="rgba(255,0,60,0.10)" />
+              <circle cx="100" cy="45" r="22" fill="url(#g)" />
+              <circle cx="100" cy="45" r="22" fill="url(#rg)" />
+              <path d="M70 76 C78 70, 90 66, 100 66 C110 66, 122 70, 130 76 C140 86, 144 106, 140 126 C136 150, 126 166, 120 182 C114 200, 118 218, 124 240 C112 250, 88 250, 76 240 C82 218, 86 200, 80 182 C74 166, 64 150, 60 126 C56 106, 60 86, 70 76 Z" fill="url(#g)" />
+              <path d="M70 76 C78 70, 90 66, 100 66 C110 66, 122 70, 130 76 C140 86, 144 106, 140 126 C136 150, 126 166, 120 182 C114 200, 118 218, 124 240 C112 250, 88 250, 76 240 C82 218, 86 200, 80 182 C74 166, 64 150, 60 126 C56 106, 60 86, 70 76 Z" fill="url(#rg)" />
+              <path d="M56 104 C40 118, 34 140, 40 160 C44 174, 50 194, 54 214 C56 226, 50 236, 40 238 C30 240, 22 232, 22 220 C22 198, 28 178, 32 162 C36 138, 42 114, 56 104 Z" fill="rgba(255,0,60,0.75)" />
+              <path d="M144 104 C160 118, 166 140, 160 160 C156 174, 150 194, 146 214 C144 226, 150 236, 160 238 C170 240, 178 232, 178 220 C178 198, 172 178, 168 162 C164 138, 158 114, 144 104 Z" fill="rgba(138,43,226,0.75)" />
+              <path d="M84 240 C78 260, 70 278, 66 300 C64 310, 72 316, 82 314 C92 312, 92 304, 94 296 C100 270, 104 258, 110 240 Z" fill="rgba(255,0,60,0.70)" />
+              <path d="M116 240 C122 260, 130 278, 134 300 C136 310, 128 316, 118 314 C108 312, 108 304, 106 296 C100 270, 96 258, 90 240 Z" fill="rgba(138,43,226,0.70)" />
+              <path d="M70 76 C78 70, 90 66, 100 66 C110 66, 122 70, 130 76 C140 86, 144 106, 140 126 C136 150, 126 166, 120 182 C114 200, 118 218, 124 240 C112 250, 88 250, 76 240 C82 218, 86 200, 80 182 C74 166, 64 150, 60 126 C56 106, 60 86, 70 76 Z" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="mini-charts">
+          <div class="mini">
+            <h3>Peso (tendencia)</h3>
+            <canvas id="bodyChartPeso"></canvas>
+            <div class="muted2" id="bodyChartPesoInfo"></div>
+          </div>
+          <div class="mini">
+            <h3>% grasa (tendencia)</h3>
+            <canvas id="bodyChartGrasa"></canvas>
+            <div class="muted2" id="bodyChartGrasaInfo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:12px;">
+        <h2>Historial</h2>
+        <div id="bodyTable"></div>
+      </div>
+    </div>
+
+    <div id="resumen" class="tab-content">
+      <h2 style="margin:10px 0;">📈 Resumen</h2>
+
+      <div class="canvas-wrap">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Grupo (gráfico)</label>
+            <select id="chartGrupo" onchange="cargarEjerciciosChart(this.value)"></select>
+          </div>
+          <div class="form-group">
+            <label>Ejercicio (gráfico)</label>
+            <select id="chartEjercicio" onchange="renderChart()">
+              <option value="">Selecciona un ejercicio</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Modo</label>
+            <select id="chartModo" onchange="renderChart()">
+              <option value="raw">Todos los registros</option>
+              <option value="pr">Solo PR (máximo acumulado)</option>
+              <option value="weekly">Máximo semanal</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Rango</label>
+            <select id="chartRango" onchange="renderChart()">
+              <option value="all">Todo</option>
+              <option value="30">Últimos 30 días</option>
+              <option value="90">Últimos 90 días</option>
+            </select>
+          </div>
+        </div>
+
+        <canvas id="chartCanvas"></canvas>
+        <div class="muted" id="chartInfo" style="margin-top: 8px;"></div>
+      </div>
+
+      <div id="resumen-contenido"></div>
+    </div>
+
+    <div id="porcentajes" class="tab-content">
+      <h2 style="margin:10px 0;">🎯 Porcentajes (descarga)</h2>
+
+      <div class="panel">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Grupo</label>
+            <select id="pctGrupo" onchange="cargarEjerciciosPct(this.value)"></select>
+          </div>
+          <div class="form-group">
+            <label>Ejercicio</label>
+            <select id="pctEjercicio" onchange="autoCargarPRyRenderPct()">
+              <option value="">Selecciona un ejercicio</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>1RM / PR (kg)</label>
+            <input type="number" id="pctMax" step="0.5" inputmode="decimal" placeholder="Ej: 100" oninput="renderPctTable()" />
+            <div class="muted" id="pctMaxHint" style="margin-top: 6px;"></div>
+          </div>
+          <div class="form-group">
+            <label>Redondeo</label>
+            <select id="pctRound" onchange="renderPctTable()">
+              <option value="0.5">0.5 kg</option>
+              <option value="1">1 kg</option>
+              <option value="2.5" selected>2.5 kg</option>
+              <option value="5">5 kg</option>
+            </select>
+            <div class="muted2" style="margin-top:6px;">Tip: el redondeo hace que el número sea usable con discos.</div>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:6px;">
+          <button class="btn secondary" onclick="aplicarDeload(70)">Semana descarga 70%</button>
+          <button class="btn secondary" onclick="aplicarDeload(60)">Semana descarga 60%</button>
+        </div>
+
+        <div id="deloadHint" class="alert" style="display:none;"></div>
+
+        <div id="pctTablaWrap"></div>
+      </div>
+    </div>
+
+    <div id="ajustes" class="tab-content">
+      <h2 style="margin:10px 0;">⚙️ Ajustes</h2>
+
+      <div class="panel">
+        <div class="btn-row">
+          <button class="btn" onclick="exportarCSV()">📥 Exportar CSV</button>
+          <button class="btn secondary" onclick="exportarBodyCSV()">📥 Exportar CSV (cuerpo)</button>
+          <button class="btn secondary" onclick="exportarBackup()">🧷 Exportar backup (JSON)</button>
+          <button class="btn secondary" onclick="tryAutoBackup('manual'); toast('Auto-backup creado');">⏱️ Crear auto-backup</button>
+          <button class="btn secondary" onclick="descargarAutoBackup()">⬇️ Descargar auto-backup</button>
+
+          <label for="importFile" class="tab-btn" style="border-style:dashed;">📤 Importar backup</label>
+          <input id="importFile" type="file" accept="application/json" style="display:none" onchange="importarBackup(this.files[0])" />
+        </div>
+
+        <div id="backupReminder" class="alert" style="display:none; border-color: rgba(255,170,0,0.22); background: rgba(255,170,0,0.08); color: rgba(255,220,170,0.95);"></div>
+
+        <div class="alert">
+          Recomendación: exporta Backup JSON y/o CSV cada cierto tiempo y guárdalo en tu nube.
+        </div>
+
+        <div class="btn-row">
+          <button class="btn danger" onclick="resetearDatos()">🧨 Borrar TODO</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const KEYS = {
+      catalogo: 'gymCatalogoV3',
+      data: 'gymDataV3',
+      recent: 'gymRecentV3',
+      autoBackup: 'gymAutoBackupV3',
+      body: 'gymBodyV1',
+      meta: 'gymMetaV1'
+    };
+
+    function safeJSONParse(s) { try { return JSON.parse(s); } catch { return null; } }
+
+    function safeGet(key) {
+      try {
+        return localStorage.getItem(key);
+      } catch {
+        return null;
+      }
+    }
+
+    function isIOS() {
+      const ua = navigator.userAgent || '';
+      return /iPad|iPhone|iPod/.test(ua);
+    }
+
+    function openExportModal(title, filename, text) {
+      const m = document.getElementById('exportModal');
+      const t = document.getElementById('exportTitle');
+      const f = document.getElementById('exportFileName');
+      const ta = document.getElementById('exportText');
+      const h = document.getElementById('exportHint');
+      if (!m || !t || !f || !ta || !h) { alert('No se pudo abrir export'); return; }
+      t.textContent = title || 'Exportar';
+      f.textContent = filename || '';
+      ta.value = text || '';
+      h.textContent = isIOS() ? 'iOS: usa Copiar (Notas/Drive) o Compartir.' : 'Puedes copiar el contenido.';
+      m.style.display = 'flex';
+      setTimeout(() => { ta.focus(); ta.select(); }, 50);
+      window.__lastExportText = ta.value;
+    }
+
+    function closeExportModal() {
+      const m = document.getElementById('exportModal');
+      if (m) m.style.display = 'none';
+    }
+
+    async function copyExportText() {
+      const ta = document.getElementById('exportText');
+      const text = (ta ? ta.value : (window.__lastExportText || ''));
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(text);
+          toast('Copiado ✅');
+          return;
+        }
+      } catch {}
+      if (ta) { ta.focus(); ta.select(); }
+      try {
+        const ok = document.execCommand('copy');
+        toast(ok ? 'Copiado ✅' : 'Selecciona y copia manual');
+      } catch {
+        toast('Selecciona y copia manual');
+      }
+    }
+
+    async function shareExportText() {
+      const ta = document.getElementById('exportText');
+      const text = (ta ? ta.value : (window.__lastExportText || ''));
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: 'Gym Traker Export', text });
+          toast('Compartido');
+          return;
+        } catch {}
+      }
+      toast('Compartir no disponible: usa Copiar');
+    }
+
+
+    function storageWorks() {
+      try {
+        const k = '__test__' + String(Date.now());
+        localStorage.setItem(k, '1');
+        localStorage.removeItem(k);
+        return true;
+      } catch {
+        return false;
+      }
+    }
+
+    function safeSet(key, value) {
+      try {
+        localStorage.setItem(key, value);
+        return true;
+      } catch (e) {
+        console.error(e);
+        toast('No se pudo guardar (espacio o modo privado). Haz Backup.');
+        return false;
+      }
+    }
+
+    const ejerciciosBase = {
+      brazos: [
+        'Curl bícep barra', 'Curl martillo', 'Curl mancuerna', 'Curl bayesian',
+        'Curl con polea y cuerda', 'Curls polea unilateral', 'Curl spider', 'Curls en banco inclinado'
+      ],
+      espalda: [
+        'Jalón agarre supino', 'Jalón agarre neutro', 'Jalón agarre prono',
+        'Dorsales polea unilateral', 'Remo barra libre', 'Máquina remo dorsal'
+      ],
+      pecho: [
+        'Pecho peck deck', 'Press inclinado', 'Press plano',
+        'Polea alta', 'Polea media', 'Polea baja', 'Aperturas'
+      ],
+      pierna: ['Peso muerto', 'Goodmorning', 'Sentadilla libre'],
+      abdomen: []
+    };
+
+    const gruposOrden = ['brazos', 'espalda', 'pecho', 'pierna', 'abdomen'];
+
+    let catalogo = null;
+    let datos = null;
+    let recientes = [];
+    let bodyData = []; // {fecha,peso,grasa,cintura,pecho,brazo,pierna,notas}
+
+    let cacheStats = {};
+
+    function makeEmptyCache() {
+      const o = {};
+      gruposOrden.forEach(g => o[g] = {});
+      return o;
+    }
+
+    function parseSeriesReps(str) {
+      const m = String(str || '').trim().match(/^(\d+)\s*[xX]\s*(\d+)$/);
+      if (!m) return null;
+      return { series: parseInt(m[1], 10), reps: parseInt(m[2], 10) };
+    }
+
+    function volumeKg(peso, seriesRepsStr) {
+      const sr = parseSeriesReps(seriesRepsStr);
+      if (!sr) return null;
+      return peso * sr.series * sr.reps;
+    }
+
+    function computeStatsForExercise(grupo, ejercicio) {
+      const regs = (datos[grupo] && datos[grupo][ejercicio]) ? datos[grupo][ejercicio] : [];
+      let prPeso = null, prFecha = null;
+      let last = null;
+
+      if (regs.length) {
+        last = regs[regs.length - 1];
+        let max = -Infinity;
+        for (const r of regs) {
+          if (typeof r.peso === 'number' && r.peso > max) {
+            max = r.peso;
+            prPeso = r.peso;
+            prFecha = r.fecha || null;
+          }
+        }
+      }
+
+      const lastVol = last ? volumeKg(last.peso, last.series) : null;
+      return { count: regs.length, prPeso, prFecha, last, lastVol };
+    }
+
+    function rebuildCacheAll() {
+      cacheStats = makeEmptyCache();
+      gruposOrden.forEach(g => {
+        (catalogo[g] || []).forEach(ej => {
+          cacheStats[g][ej] = computeStatsForExercise(g, ej);
+        });
+      });
+    }
+
+    function toast(msg) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.style.display = 'block';
+      clearTimeout(window.__toastT);
+      window.__toastT = setTimeout(() => (el.style.display = 'none'), 1400);
+    }
+
+    function switchTab(tabName, btn) {
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabName).classList.add('active');
+      if (btn) btn.classList.add('active');
+      if (tabName === 'resumen') setTimeout(renderChart, 60);
+      if (tabName === 'cuerpo') setTimeout(renderBodyAll, 60);
+    }
+
+    function escapeHtml(s) {
+      return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+    }
+
+    function badgeClass(p) {
+      if (p === '+') return 'badge up';
+      if (p === '-') return 'badge down';
+      if (p === '=') return 'badge eq';
+      return 'badge';
+    }
+
+    function tituloGrupo(k) { return k.charAt(0).toUpperCase() + k.slice(1); }
+
+    function todayISO() {
+      const d = new Date();
+      return d.toISOString().slice(0,10);
+    }
+
+    function downloadBlob(content, filename, mime) {
+      if (isIOS()) {
+        openExportModal('Exportar', filename, String(content || ''));
+        return;
+      }
+      const blob = new Blob([content], { type: mime });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+    }
+
+    function tryAutoBackup(reason) {
+      const now = new Date();
+      const payload = { version: 33, reason, at: now.toISOString(), catalogo, datos, recientes, bodyData };
+      const current = safeJSONParse(localStorage.getItem(KEYS.autoBackup)) || [];
+      current.unshift(payload);
+      safeSet(KEYS.autoBackup, JSON.stringify(current.slice(0, 3)));
+    }
+
+    function descargarAutoBackup() {
+      const arr = safeJSONParse(localStorage.getItem(KEYS.autoBackup)) || [];
+      if (!arr.length) return toast('Aún no hay auto-backups');
+      downloadBlob(JSON.stringify(arr[0], null, 2), `gym-auto-backup-${new Date().toISOString().slice(0,10)}.json`, 'application/json');
+      toast('Auto-backup descargado');
+    }
+
+    function loadRecientes() {
+      const arr = safeJSONParse(localStorage.getItem(KEYS.recent)) || [];
+      recientes = Array.isArray(arr) ? arr.slice(0, 12) : [];
+    }
+
+    function saveRecientes() {
+      safeSet(KEYS.recent, JSON.stringify(recientes.slice(0, 12)));
+    }
+
+    function pushReciente(grupo, ejercicio) {
+      if (!grupo || !ejercicio) return;
+      const key = grupo + '|' + ejercicio;
+      recientes = recientes.filter(x => (x.grupo + '|' + x.ejercicio) !== key);
+      recientes.unshift({ grupo, ejercicio });
+      recientes = recientes.slice(0, 12);
+      saveRecientes();
+      renderRecientesChips();
+    }
+
+    function renderRecientesChips() {
+      const wrap = document.getElementById('recientesChips');
+      const g = document.getElementById('grupoSelect').value;
+      const list = recientes.filter(r => r.grupo === g).slice(0, 6);
+      if (!list.length) {
+        wrap.innerHTML = '<span class="muted2">Recientes: (aún no)</span>';
+        return;
+      }
+      wrap.innerHTML = list.map(r => `<span class="chip" onclick="seleccionarEjercicioReciente('${escapeHtml(r.ejercicio)}')">${escapeHtml(r.ejercicio)}</span>`).join('');
+    }
+
+    function seleccionarEjercicioReciente(ejercicio) {
+      const sel = document.getElementById('ejercicioSelect');
+      sel.value = ejercicio;
+      onEjercicioSelected();
+      toast('Ejercicio seleccionado');
+    }
+
+    function loadBody() {
+      const arr = safeJSONParse(localStorage.getItem(KEYS.body)) || [];
+      bodyData = Array.isArray(arr) ? arr : [];
+      bodyData.sort((a,b) => String(a.fecha||'').localeCompare(String(b.fecha||'')));
+    }
+
+    function saveBody() {
+      safeSet(KEYS.body, JSON.stringify(bodyData));
+    }
+
+    function loadAll() {
+      const c = safeJSONParse(localStorage.getItem(KEYS.catalogo));
+      const d = safeJSONParse(localStorage.getItem(KEYS.data));
+      catalogo = c || JSON.parse(JSON.stringify(ejerciciosBase));
+      datos = d || {};
+      gruposOrden.forEach(g => { if (!catalogo[g]) catalogo[g] = []; });
+      loadRecientes();
+      loadBody();
+      rebuildCacheAll();
+    }
+
+    function saveAll() {
+      safeSet(KEYS.catalogo, JSON.stringify(catalogo));
+      safeSet(KEYS.data, JSON.stringify(datos));
+      safeSet(KEYS.recent, JSON.stringify(recientes));
+      saveBody();
+    }
+
+    function onGrupoChanged() {
+      const g = document.getElementById('grupoSelect').value;
+      document.getElementById('filtroEjercicio').value = '';
+      cargarEjerciciosGrupoFiltrados(g, '');
+      renderRecientesChips();
+      onEjercicioSelected();
+    }
+
+    function cargarEjerciciosGrupoFiltrados(grupo, filtro) {
+      const sel = document.getElementById('ejercicioSelect');
+      sel.innerHTML = '<option value="">Selecciona un ejercicio</option>';
+      const f = String(filtro || '').trim().toLowerCase();
+      const arr = (catalogo[grupo] || []).filter(e => !f || e.toLowerCase().includes(f));
+      arr.forEach(e => {
+        const opt = document.createElement('option');
+        opt.value = e;
+        opt.textContent = e;
+        sel.appendChild(opt);
+      });
+      if (arr.length) sel.value = arr[0];
+    }
+
+    function onEjercicioSelected() {
+      const g = document.getElementById('grupoSelect').value;
+      const ej = document.getElementById('ejercicioSelect').value;
+      if (ej) pushReciente(g, ej);
+    }
+
+    function limpiarCamposRegistro() {
+      document.getElementById('peso').value = '';
+      document.getElementById('series').value = '';
+      document.getElementById('rpe').value = '';
+      document.getElementById('progreso').value = '';
+      document.getElementById('notas').value = '';
+      toast('Campos limpios');
+    }
+
+    function getLastRegistro(grupo, ejercicio) {
+      const regs = (datos[grupo] && datos[grupo][ejercicio]) ? datos[grupo][ejercicio] : [];
+      return regs.length ? regs[regs.length - 1] : null;
+    }
+
+    function copiarUltimoRegistro() {
+      const g = document.getElementById('grupoSelect').value;
+      const ej = document.getElementById('ejercicioSelect').value;
+      if (!ej) return toast('Selecciona un ejercicio');
+      const last = getLastRegistro(g, ej);
+      if (!last) return toast('No hay registros previos');
+      document.getElementById('peso').value = last.peso ?? '';
+      document.getElementById('series').value = last.series ?? '';
+      document.getElementById('rpe').value = last.rpe ?? '';
+      document.getElementById('progreso').value = last.progreso ?? '';
+      document.getElementById('notas').value = last.notas ?? '';
+      toast('Copiado desde último');
+    }
+
+    function setPesoFromLast() {
+      const g = document.getElementById('grupoSelect').value;
+      const ej = document.getElementById('ejercicioSelect').value;
+      if (!ej) return toast('Selecciona un ejercicio');
+      const last = getLastRegistro(g, ej);
+      if (!last) return toast('No hay último registro');
+      document.getElementById('peso').value = last.peso ?? '';
+      toast('Peso desde último');
+    }
+
+    function incPeso(delta) {
+      const input = document.getElementById('peso');
+      const cur = parseFloat(input.value || '0');
+      const next = (Number.isNaN(cur) ? 0 : cur) + delta;
+      input.value = (Math.round(next * 2) / 2).toString();
+    }
+
+    function agregarEjercicioCatalogo() {
+      const grupo = document.getElementById('grupoSelect').value;
+      const nombre = (document.getElementById('nuevoEjercicio').value || '').trim();
+      if (!nombre) return toast('Escribe el nombre del ejercicio');
+      if (!catalogo[grupo]) catalogo[grupo] = [];
+      if (catalogo[grupo].includes(nombre)) return toast('Ya existe en la lista');
+
+      catalogo[grupo].push(nombre);
+      document.getElementById('nuevoEjercicio').value = '';
+      cacheStats[grupo][nombre] = computeStatsForExercise(grupo, nombre);
+      saveAll();
+      tryAutoBackup('add-exercise');
+
+      const filtro = document.getElementById('filtroEjercicio').value;
+      cargarEjerciciosGrupoFiltrados(grupo, filtro);
+      document.getElementById('ejercicioSelect').value = nombre;
+      pushReciente(grupo, nombre);
+
+      actualizarTablas();
+      toast('Ejercicio agregado ✅');
+    }
+
+    function agregarSesion() {
+      const grupo = document.getElementById('grupoSelect').value;
+      const ejercicio = document.getElementById('ejercicioSelect').value;
+      const fecha = document.getElementById('fecha').value;
+      const pesoStr = document.getElementById('peso').value;
+      const series = document.getElementById('series').value;
+      const rpeStr = document.getElementById('rpe').value;
+      const progreso = document.getElementById('progreso').value;
+      const notas = document.getElementById('notas').value;
+
+      const peso = parseFloat(pesoStr);
+      if (!ejercicio) return toast('Selecciona un ejercicio');
+      if (!fecha) return toast('Selecciona fecha');
+      if (!pesoStr || Number.isNaN(peso) || peso <= 0) return toast('Peso inválido');
+
+      if (!datos[grupo]) datos[grupo] = {};
+      if (!datos[grupo][ejercicio]) datos[grupo][ejercicio] = [];
+
+      const record = { fecha, peso, series: series || '', rpe: rpeStr ? parseInt(rpeStr, 10) : null, progreso: progreso || '', notas: notas || '' };
+      datos[grupo][ejercicio].push(record);
+      pushReciente(grupo, ejercicio);
+
+      cacheStats[grupo][ejercicio] = computeStatsForExercise(grupo, ejercicio);
+      saveAll();
+      tryAutoBackup('add-session');
+
+      limpiarCamposRegistro();
+      document.getElementById('fecha').value = todayISO();
+
+      actualizarTablas();
+      autoCargarPRyRenderPct();
+      toast('Sesión guardada ✅');
+    }
+
+    function eliminarRegistro(grupo, ejercicio, indice) {
+      if (!confirm('¿Eliminar este registro?')) return;
+      if (!datos[grupo] || !datos[grupo][ejercicio]) return;
+
+      datos[grupo][ejercicio].splice(indice, 1);
+      if (datos[grupo][ejercicio].length === 0) delete datos[grupo][ejercicio];
+
+      cacheStats[grupo][ejercicio] = computeStatsForExercise(grupo, ejercicio);
+      saveAll();
+      tryAutoBackup('delete-session');
+
+      actualizarTablas();
+      renderChart();
+      autoCargarPRyRenderPct();
+      toast('Registro eliminado');
+    }
+
+    function renderGrupo(grupo) {
+      const contenedor = document.getElementById(`tabla-${grupo}`);
+      const ejercicios = catalogo[grupo] || [];
+      if (!ejercicios.length) {
+        contenedor.innerHTML = '<div class="alert">No hay ejercicios en esta rutina aún. Agrégalos desde Registrar.</div>';
+        return;
+      }
+
+      let html = '';
+      ejercicios.forEach(ej => {
+        const st = cacheStats[grupo][ej] || computeStatsForExercise(grupo, ej);
+        const last = st.last;
+        const regs = (datos[grupo] && datos[grupo][ej]) ? datos[grupo][ej] : [];
+        const ejSafe = String(ej).replace(/'/g, "\\'");
+
+        html += `
+          <div class="ejercicio-card">
+            <div class="ej-head">
+              <h3>${escapeHtml(ej)}</h3>
+              <div class="muted2">${st.count} sesiones</div>
+            </div>
+
+            <div class="ej-grid">
+              <div class="kv"><span class="k">PR</span><span class="v">${st.prPeso != null ? st.prPeso + ' kg' : '-'}</span></div>
+              <div class="kv"><span class="k">Fecha PR</span><span class="v">${st.prFecha || '-'}</span></div>
+              <div class="kv"><span class="k">Último</span><span class="v">${last ? (last.peso + ' kg') : '-'}</span></div>
+              <div class="kv"><span class="k">Vol.</span><span class="v">${st.lastVol ? Math.round(st.lastVol) : '-'}</span></div>
+            </div>
+
+            ${regs.length ? `
+              <details>
+                <summary>Ver historial (${regs.length})</summary>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Fecha</th><th>Peso</th><th>SxR</th><th>Vol.</th><th>RPE</th><th>Prog</th><th>Acción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${regs.map((r,i) => {
+                      const vol = volumeKg(r.peso, r.series);
+                      return `
+                        <tr>
+                          <td>${escapeHtml(r.fecha)}</td>
+                          <td>${r.peso} kg</td>
+                          <td>${escapeHtml(r.series || '-')}</td>
+                          <td>${vol ? Math.round(vol) : '-'}</td>
+                          <td>${r.rpe ?? '-'}</td>
+                          <td><span class="${badgeClass(r.progreso)}">${escapeHtml(r.progreso || '-')}</span></td>
+                          <td><button class="btn danger" style="padding:6px 10px;border-radius:10px;" onclick="eliminarRegistro('${grupo}','${ejSafe}',${i})">×</button></td>
+                        </tr>
+                      `;
+                    }).join('')}
+                  </tbody>
+                </table>
+              </details>
+            ` : `<div class="muted2" style="margin-top:10px;">Sin registros todavía.</div>`}
+          </div>
+        `;
+      });
+
+      contenedor.innerHTML = html;
+    }
+
+    function actualizarTablas() {
+      gruposOrden.forEach(renderGrupo);
+      actualizarResumenCards();
+      poblarSelectsResumen();
+      poblarSelectsPorcentajes();
+    }
+
+    function actualizarResumenCards() {
+      const cont = document.getElementById('resumen-contenido');
+      let html = '';
+      let tieneData = false;
+
+      gruposOrden.forEach(g => {
+        const ejercicios = catalogo[g] || [];
+        let bestW = -Infinity;
+        let bestEj = '-';
+        let sessions = 0;
+
+        ejercicios.forEach(ej => {
+          const st = cacheStats[g][ej] || computeStatsForExercise(g, ej);
+          sessions += st.count;
+          if (st.prPeso != null) {
+            tieneData = true;
+            if (st.prPeso > bestW) { bestW = st.prPeso; bestEj = ej; }
+          }
+        });
+
+        html += `
+          <div class="card">
+            <h3>${tituloGrupo(g)}</h3>
+            <div class="card-value">${isFinite(bestW) ? bestW + ' kg' : '-'}</div>
+            <div class="card-label">Mejor: ${escapeHtml(bestEj)}</div>
+            <div class="card-label" style="margin-top:8px;">Ejercicios: ${ejercicios.length} | Sesiones: ${sessions}</div>
+          </div>
+        `;
+      });
+
+      cont.innerHTML = tieneData ? `<div class="summary-cards">${html}</div>` : `<div class="alert">No hay datos aún. Registra sesiones para ver progreso.</div>`;
+    }
+
+    // ===== Chart (gym) =====
+    function poblarSelectsResumen() {
+      const sel = document.getElementById('chartGrupo');
+      if (!sel) return;
+      const prev = sel.value;
+
+      sel.innerHTML = '';
+      gruposOrden.forEach(g => {
+        const opt = document.createElement('option');
+        opt.value = g;
+        opt.textContent = tituloGrupo(g);
+        sel.appendChild(opt);
+      });
+
+      sel.value = prev || gruposOrden[0];
+      cargarEjerciciosChart(sel.value, true);
+    }
+
+    function cargarEjerciciosChart(grupo, silent = false) {
+      const sel = document.getElementById('chartEjercicio');
+      sel.innerHTML = '<option value="">Selecciona un ejercicio</option>';
+
+      (catalogo[grupo] || []).forEach(ej => {
+        const opt = document.createElement('option');
+        opt.value = ej;
+        opt.textContent = ej;
+        sel.appendChild(opt);
+      });
+
+      if ((catalogo[grupo] || []).length > 0) sel.value = catalogo[grupo][0];
+      if (!silent) renderChart();
+      else setTimeout(renderChart, 60);
+    }
+
+    function toISOWeekKey(dateObj) {
+      const d = new Date(Date.UTC(dateObj.getFullYear(), dateObj.getMonth(), dateObj.getDate()));
+      const dayNum = d.getUTCDay() || 7;
+      d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+      const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+      const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+      return `${d.getUTCFullYear()}-W${String(weekNo).padStart(2,'0')}`;
+    }
+
+    function formatearFechaISOaDDMM(fechaISO) {
+      if (!fechaISO) return '-';
+      const [y,m,d] = fechaISO.split('-');
+      return `${d}-${m}`;
+    }
+
+    function getSeries(grupo, ejercicio, modo, rango) {
+      const regs = (datos[grupo] && datos[grupo][ejercicio]) ? [...datos[grupo][ejercicio]] : [];
+      regs.sort((a,b) => (a.fecha||'').localeCompare(b.fecha||''));
+
+      let series = regs
+        .map(r => ({ fecha: r.fecha, peso: Number(r.peso) }))
+        .filter(p => p.fecha && !Number.isNaN(p.peso));
+
+      const rangeN = (rango === 'all') ? null : parseInt(rango, 10);
+      if (rangeN) {
+        series = series.filter(p => {
+          const d = new Date(p.fecha);
+          if (Number.isNaN(d.getTime())) return true;
+          const now = new Date();
+          return (now - d) <= rangeN * 86400000;
+        });
+      }
+
+      if (modo === 'pr') {
+        let best = -Infinity;
+        const out = [];
+        for (const p of series) {
+          if (p.peso > best) best = p.peso;
+          out.push({ fecha: p.fecha, peso: best });
+        }
+        return out;
+      }
+
+      if (modo === 'weekly') {
+        const map = new Map();
+        for (const p of series) {
+          const d = new Date(p.fecha);
+          if (Number.isNaN(d.getTime())) continue;
+          const key = toISOWeekKey(d);
+          const prev = map.get(key);
+          if (!prev || p.peso > prev.peso) map.set(key, { fecha: key, peso: p.peso });
+        }
+        return Array.from(map.values()).sort((a,b) => a.fecha.localeCompare(b.fecha));
+      }
+
+      return series;
+    }
+
+    function resizeCanvasForDPR(canvas) {
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.floor(rect.width * dpr);
+      canvas.height = Math.floor(rect.height * dpr);
+      const ctx = canvas.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      return { ctx, w: rect.width, h: rect.height };
+    }
+
+    function renderChart() {
+      const grupo = document.getElementById('chartGrupo').value;
+      const ejercicio = document.getElementById('chartEjercicio').value;
+      const modo = document.getElementById('chartModo').value;
+      const rango = document.getElementById('chartRango').value;
+
+      const canvas = document.getElementById('chartCanvas');
+      const info = document.getElementById('chartInfo');
+
+      const { ctx, w, h } = resizeCanvasForDPR(canvas);
+      ctx.clearRect(0, 0, w, h);
+
+      if (!grupo || !ejercicio) {
+        info.textContent = 'Selecciona un grupo y un ejercicio.';
+        return;
+      }
+
+      const serie = getSeries(grupo, ejercicio, modo, rango);
+      if (serie.length < 2) {
+        info.textContent = 'Necesitas al menos 2 puntos para ver la línea.';
+        return;
+      }
+
+      const pesos = serie.map(p => p.peso);
+      const minY = Math.min(...pesos);
+      const maxY = Math.max(...pesos);
+      const yRange = (maxY - minY) || 1;
+
+      const padL = 46, padR = 12, padT = 12, padB = 34;
+      const gw = w - padL - padR;
+      const gh = h - padT - padB;
+
+      const xFor = (i) => padL + (i * (gw / (serie.length - 1)));
+      const yFor = (peso) => padT + (gh - ((peso - minY) / yRange) * gh);
+
+      ctx.strokeStyle = 'rgba(242,241,246,0.16)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(padL, padT);
+      ctx.lineTo(padL, padT + gh);
+      ctx.lineTo(padL + gw, padT + gh);
+      ctx.stroke();
+
+      ctx.fillStyle = 'rgba(242,241,246,0.65)';
+      ctx.font = '12px sans-serif';
+      ctx.fillText(`${maxY} kg`, 8, padT + 10);
+      ctx.fillText(`${minY} kg`, 8, padT + gh);
+
+      const grad = ctx.createLinearGradient(padL, 0, padL + gw, 0);
+      grad.addColorStop(0, 'rgba(255,0,60,1)');
+      grad.addColorStop(1, 'rgba(138,43,226,1)');
+
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      ctx.moveTo(xFor(0), yFor(serie[0].peso));
+      for (let i = 1; i < serie.length; i++) ctx.lineTo(xFor(i), yFor(serie[i].peso));
+      ctx.stroke();
+
+      ctx.fillStyle = 'rgba(255,0,60,1)';
+      for (let i = 0; i < serie.length; i++) {
+        const x = xFor(i);
+        const y = yFor(serie[i].peso);
+        ctx.beginPath();
+        ctx.arc(x, y, 3.2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.fillStyle = 'rgba(242,241,246,0.65)';
+      const firstLabel = (modo === 'weekly') ? serie[0].fecha : formatearFechaISOaDDMM(serie[0].fecha);
+      const lastLabel = (modo === 'weekly') ? serie[serie.length - 1].fecha : formatearFechaISOaDDMM(serie[serie.length - 1].fecha);
+      ctx.fillText(firstLabel, padL, padT + gh + 22);
+      ctx.fillText(lastLabel, padL + gw - (lastLabel.length * 7), padT + gh + 22);
+
+      info.textContent = `${ejercicio} | Puntos: ${serie.length} | Max: ${maxY} kg | Modo: ${modo}`;
+    }
+
+    window.addEventListener('resize', () => {
+      if (document.querySelector('#resumen.tab-content.active')) renderChart();
+      if (document.querySelector('#cuerpo.tab-content.active')) renderBodyAll();
+    });
+
+    // ===== Porcentajes =====
+    const pctList = [100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50];
+
+    function poblarSelectsPorcentajes() {
+      const sel = document.getElementById('pctGrupo');
+      if (!sel) return;
+      const prev = sel.value;
+
+      sel.innerHTML = '';
+      gruposOrden.forEach(g => {
+        const opt = document.createElement('option');
+        opt.value = g;
+        opt.textContent = tituloGrupo(g);
+        sel.appendChild(opt);
+      });
+
+      sel.value = prev || gruposOrden[0];
+      cargarEjerciciosPct(sel.value);
+    }
+
+    function cargarEjerciciosPct(grupo) {
+      const sel = document.getElementById('pctEjercicio');
+      sel.innerHTML = '<option value="">Selecciona un ejercicio</option>';
+      (catalogo[grupo] || []).forEach(ej => {
+        const opt = document.createElement('option');
+        opt.value = ej;
+        opt.textContent = ej;
+        sel.appendChild(opt);
+      });
+      if ((catalogo[grupo] || []).length > 0) sel.value = catalogo[grupo][0];
+      autoCargarPRyRenderPct();
+    }
+
+    function roundToStep(value, step) {
+      const inv = 1 / step;
+      return Math.round(value * inv) / inv;
+    }
+
+    function getPR(grupo, ejercicio) {
+      const st = cacheStats[grupo] && cacheStats[grupo][ejercicio];
+      if (st && st.prPeso != null) return { peso: st.prPeso, fecha: st.prFecha };
+      return null;
+    }
+
+    function autoCargarPRyRenderPct() {
+      const g = document.getElementById('pctGrupo').value;
+      const ej = document.getElementById('pctEjercicio').value;
+      const hint = document.getElementById('pctMaxHint');
+      const input = document.getElementById('pctMax');
+
+      if (!g || !ej) { hint.textContent = ''; renderPctTable(); return; }
+
+      const pr = getPR(g, ej);
+      if (pr) {
+        if (!input.value) input.value = pr.peso;
+        hint.innerHTML = `PR detectado: <span class="pill">${pr.peso} kg</span> (${pr.fecha || 'sin fecha'})`;
+      } else {
+        hint.textContent = 'No hay PR aún. Ingresa un máximo manual.';
+      }
+
+      renderPctTable();
+    }
+
+    function renderPctTable() {
+      const wrap = document.getElementById('pctTablaWrap');
+      const max = parseFloat(document.getElementById('pctMax').value);
+      const step = parseFloat(document.getElementById('pctRound').value);
+
+      if (!max || Number.isNaN(max) || max <= 0) {
+        wrap.innerHTML = '<div class="alert">Ingresa un PR/1RM para calcular porcentajes.</div>';
+        return;
+      }
+
+      const rows = pctList.map(p => {
+        const raw = max * (p / 100);
+        const rounded = roundToStep(raw, step);
+        const tag = (p === 70 || p === 60) ? ' <span class="pill">descarga</span>' : '';
+        return `<tr><td>${p}%${tag}</td><td><strong>${rounded}</strong> kg</td></tr>`;
+      }).join('');
+
+      wrap.innerHTML = `
+        <table class="percent-table">
+          <thead><tr><th>Porcentaje</th><th>Peso</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      `;
+    }
+
+    function aplicarDeload(pct) {
+      const max = parseFloat(document.getElementById('pctMax').value);
+      const step = parseFloat(document.getElementById('pctRound').value);
+      if (!max || Number.isNaN(max) || max <= 0) return toast('Ingresa PR/1RM primero');
+
+      const w = roundToStep(max * (pct / 100), step);
+      const hint = document.getElementById('deloadHint');
+      hint.style.display = 'block';
+      hint.innerHTML = `Sugerencia descarga: <span class="pill">${pct}%</span> → <strong>${w} kg</strong>. Ejemplo: 3x5 o 3x8 con técnica perfecta.`;
+      toast('Descarga aplicada');
+    }
+
+    // ===== Cuerpo =====
+    function limpiarBodyForm() {
+      ['bodyPeso','bodyGrasa','bodyCintura','bodyPecho','bodyBrazo','bodyPierna','bodyNotas'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = '';
+      });
+      toast('Body: limpio');
+    }
+
+    function getLastBody() {
+      return bodyData.length ? bodyData[bodyData.length - 1] : null;
+    }
+
+    function copiarUltimaBody() {
+      const last = getLastBody();
+      if (!last) return toast('No hay mediciones');
+      if (last.peso != null) document.getElementById('bodyPeso').value = last.peso;
+      if (last.grasa != null) document.getElementById('bodyGrasa').value = last.grasa;
+      if (last.cintura != null) document.getElementById('bodyCintura').value = last.cintura;
+      if (last.pecho != null) document.getElementById('bodyPecho').value = last.pecho;
+      if (last.brazo != null) document.getElementById('bodyBrazo').value = last.brazo;
+      if (last.pierna != null) document.getElementById('bodyPierna').value = last.pierna;
+      document.getElementById('bodyNotas').value = last.notas || '';
+      toast('Body: copiado');
+    }
+
+    function numOrNull(id) {
+      const v = document.getElementById(id).value;
+      if (!v) return null;
+      const n = parseFloat(v);
+      return Number.isNaN(n) ? null : n;
+    }
+
+    function agregarBody() {
+      const fecha = document.getElementById('bodyFecha').value;
+      if (!fecha) return toast('Body: selecciona fecha');
+
+      const rec = {
+        fecha,
+        peso: numOrNull('bodyPeso'),
+        grasa: numOrNull('bodyGrasa'),
+        cintura: numOrNull('bodyCintura'),
+        pecho: numOrNull('bodyPecho'),
+        brazo: numOrNull('bodyBrazo'),
+        pierna: numOrNull('bodyPierna'),
+        notas: (document.getElementById('bodyNotas').value || '').trim()
+      };
+
+      const idx = bodyData.findIndex(x => x.fecha === fecha);
+      if (idx >= 0) bodyData[idx] = rec; else bodyData.push(rec);
+      bodyData.sort((a,b) => String(a.fecha||'').localeCompare(String(b.fecha||'')));
+
+      saveBody();
+      tryAutoBackup('body-add');
+      renderBodyAll();
+      toast('Body: guardado ✅');
+    }
+
+    function eliminarBody(i) {
+      if (!confirm('¿Eliminar esta medición?')) return;
+      bodyData.splice(i, 1);
+      saveBody();
+      tryAutoBackup('body-delete');
+      renderBodyAll();
+      toast('Body: eliminado');
+    }
+
+    function fmtUnit(v, unit, d=1) {
+      if (v == null || Number.isNaN(v)) return '-';
+      const n = Number(v);
+      const p = Math.pow(10, d);
+      const fixed = (Math.round(n * p) / p);
+      return String(fixed) + (unit ? (' ' + unit) : '');
+    }
+
+    function renderBodyDashboard() {
+      const last = getLastBody();
+      const dateEl = document.getElementById('bodyLastDate');
+
+      if (!last) {
+        if (dateEl) dateEl.textContent = 'Sin mediciones';
+        ['Peso','Grasa','Pecho','Cintura','Brazo','Pierna'].forEach(k => {
+          const el = document.getElementById('spot' + k);
+          if (el) el.textContent = '-';
+        });
+        return;
+      }
+
+      if (dateEl) dateEl.textContent = 'Última: ' + last.fecha;
+      document.getElementById('spotPeso').textContent = fmtUnit(last.peso, 'kg', 1);
+      document.getElementById('spotGrasa').textContent = fmtUnit(last.grasa, '%', 1);
+      document.getElementById('spotPecho').textContent = fmtUnit(last.pecho, 'cm', 1);
+      document.getElementById('spotCintura').textContent = fmtUnit(last.cintura, 'cm', 1);
+      document.getElementById('spotBrazo').textContent = fmtUnit(last.brazo, 'cm', 1);
+      document.getElementById('spotPierna').textContent = fmtUnit(last.pierna, 'cm', 1);
+    }
+
+    function renderBodyTable() {
+      const wrap = document.getElementById('bodyTable');
+      if (!wrap) return;
+
+      if (!bodyData.length) {
+        wrap.innerHTML = '<div class="alert">Aún no hay mediciones. Registra una para ver el dashboard.</div>';
+        return;
+      }
+
+      const rows = [...bodyData].slice().reverse().map((r, idxRev) => {
+        const i = bodyData.length - 1 - idxRev;
+        return `<tr>
+          <td>${escapeHtml(r.fecha || '')}</td>
+          <td>${r.peso ?? ''}</td>
+          <td>${r.grasa ?? ''}</td>
+          <td>${r.cintura ?? ''}</td>
+          <td>${r.pecho ?? ''}</td>
+          <td>${r.brazo ?? ''}</td>
+          <td>${r.pierna ?? ''}</td>
+          <td>${escapeHtml(r.notas || '')}</td>
+          <td><button class="btn danger" style="padding:6px 10px;border-radius:10px;" onclick="eliminarBody(${i})">×</button></td>
+        </tr>`;
+      }).join('');
+
+      wrap.innerHTML = `<table>
+        <thead><tr>
+          <th>Fecha</th><th>Peso</th><th>%</th><th>Cintura</th><th>Pecho</th><th>Brazo</th><th>Pierna</th><th>Notas</th><th>Acción</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+    }
+
+    function renderBodyLine(canvasId, infoId, key, unit) {
+      const canvas = document.getElementById(canvasId);
+      const info = document.getElementById(infoId);
+      if (!canvas || !info) return;
+
+      const points = bodyData
+        .filter(r => r.fecha && r[key] != null && !Number.isNaN(Number(r[key])))
+        .map(r => ({ fecha: r.fecha, val: Number(r[key]) }))
+        .sort((a,b) => a.fecha.localeCompare(b.fecha));
+
+      const view = points.slice(-18);
+      const { ctx, w, h } = resizeCanvasForDPR(canvas);
+      ctx.clearRect(0, 0, w, h);
+
+      if (view.length < 2) { info.textContent = 'Necesitas 2+ puntos.'; return; }
+
+      const vals = view.map(p => p.val);
+      const minY = Math.min(...vals);
+      const maxY = Math.max(...vals);
+      const yRange = (maxY - minY) || 1;
+
+      const padL = 46, padR = 12, padT = 12, padB = 26;
+      const gw = w - padL - padR;
+      const gh = h - padT - padB;
+      const xFor = i => padL + (i * (gw / (view.length - 1)));
+      const yFor = v => padT + (gh - ((v - minY) / yRange) * gh);
+
+      ctx.strokeStyle = 'rgba(242,241,246,0.16)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(padL, padT);
+      ctx.lineTo(padL, padT + gh);
+      ctx.lineTo(padL + gw, padT + gh);
+      ctx.stroke();
+
+      const grad = ctx.createLinearGradient(padL, 0, padL + gw, 0);
+      grad.addColorStop(0, 'rgba(255,0,60,1)');
+      grad.addColorStop(1, 'rgba(138,43,226,1)');
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 2.4;
+
+      ctx.beginPath();
+      ctx.moveTo(xFor(0), yFor(view[0].val));
+      for (let i = 1; i < view.length; i++) ctx.lineTo(xFor(i), yFor(view[i].val));
+      ctx.stroke();
+
+      ctx.fillStyle = 'rgba(255,0,60,1)';
+      for (let i = 0; i < view.length; i++) {
+        ctx.beginPath();
+        ctx.arc(xFor(i), yFor(view[i].val), 3.1, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.fillStyle = 'rgba(242,241,246,0.65)';
+      ctx.font = '12px sans-serif';
+      ctx.fillText(`${maxY} ${unit}`, 8, padT + 10);
+      ctx.fillText(`${minY} ${unit}`, 8, padT + gh);
+      info.textContent = `Puntos: ${view.length} | Min: ${minY} ${unit} | Max: ${maxY} ${unit}`;
+    }
+
+    function renderBodyAll() {
+      renderBodyDashboard();
+      renderBodyTable();
+      renderBodyLine('bodyChartPeso', 'bodyChartPesoInfo', 'peso', 'kg');
+      renderBodyLine('bodyChartGrasa', 'bodyChartGrasaInfo', 'grasa', '%');
+    }
+
+    // ===== Exports =====
+    function exportarBodyCSV() {
+      let csv = 'Fecha,Peso(kg),Grasa(%),Cintura(cm),Pecho(cm),Brazo(cm),Pierna(cm),Notas\n';
+      bodyData.forEach(r => {
+        const notas = (r.notas || '').replace(/"/g, '""');
+        csv += `${r.fecha || ''},${r.peso ?? ''},${r.grasa ?? ''},${r.cintura ?? ''},${r.pecho ?? ''},${r.brazo ?? ''},${r.pierna ?? ''},"${notas}"\n`;
+      });
+      downloadBlob(csv, `gym-body-${new Date().toISOString().slice(0,10)}.csv`, 'text/csv;charset=utf-8;');
+      toast('CSV cuerpo descargado');
+    }
+
+    function exportarCSV() {
+      let csv = 'Grupo,Ejercicio,Fecha,Peso(kg),SeriesxReps,RPE,Progreso,Notas\n';
+      for (const [grupo, ejercicios] of Object.entries(datos)) {
+        for (const [ejercicio, registros] of Object.entries(ejercicios)) {
+          registros.forEach(r => {
+            const notas = (r.notas || '').replace(/"/g, '""');
+            csv += `${grupo},"${String(ejercicio).replace(/"/g,'""')}",${r.fecha},${r.peso},"${(r.series || '').replace(/"/g,'""')}",${r.rpe ?? ''},${r.progreso ?? ''},"${notas}"\n`;
+          });
+        }
+      }
+      downloadBlob(csv, `gym-tracker-${new Date().toISOString().slice(0,10)}.csv`, 'text/csv;charset=utf-8;');
+      toast('CSV descargado');
+    }
+
+    function exportarBackup() {
+      const payload = { version: 33, exportedAt: new Date().toISOString(), catalogo, datos, recientes, bodyData };
+      downloadBlob(JSON.stringify(payload, null, 2), `gym-tracker-backup-${new Date().toISOString().slice(0,10)}.json`, 'application/json');
+      toast('Backup descargado');
+    }
+
+    function importarBackup(file) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const obj = JSON.parse(reader.result);
+          if (!obj || !obj.catalogo || !obj.datos) throw new Error('Formato inválido');
+          catalogo = obj.catalogo;
+          datos = obj.datos;
+          recientes = obj.recientes || [];
+          bodyData = Array.isArray(obj.bodyData) ? obj.bodyData : [];
+          gruposOrden.forEach(g => { if (!catalogo[g]) catalogo[g] = []; });
+          rebuildCacheAll();
+          saveAll();
+          tryAutoBackup('import');
+          initUIAfterLoad();
+          toast('Backup importado ✅');
+        } catch (e) {
+          alert('Error importando backup: ' + e.message);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function resetearDatos() {
+      if (!confirm('Esto borra TODO (datos + catálogo + cuerpo). ¿Seguro?')) return;
+      localStorage.removeItem(KEYS.catalogo);
+      localStorage.removeItem(KEYS.data);
+      localStorage.removeItem(KEYS.recent);
+      localStorage.removeItem(KEYS.autoBackup);
+      localStorage.removeItem(KEYS.body);
+
+      catalogo = JSON.parse(JSON.stringify(ejerciciosBase));
+      datos = {};
+      recientes = [];
+      bodyData = [];
+      rebuildCacheAll();
+      saveAll();
+      tryAutoBackup('reset');
+
+      initUIAfterLoad();
+      toast('Todo borrado');
+    }
+
+    function initUIAfterLoad() {
+      document.getElementById('fecha').value = todayISO();
+      const bf = document.getElementById('bodyFecha');
+      if (bf) bf.value = todayISO();
+
+      const filtro = document.getElementById('filtroEjercicio');
+      filtro.oninput = () => {
+        const g = document.getElementById('grupoSelect').value;
+        cargarEjerciciosGrupoFiltrados(g, filtro.value);
+      };
+
+      document.getElementById('grupoSelect').value = 'brazos';
+      cargarEjerciciosGrupoFiltrados('brazos', '');
+      renderRecientesChips();
+
+      poblarSelectsResumen();
+      poblarSelectsPorcentajes();
+
+      actualizarTablas();
+      renderChart();
+      autoCargarPRyRenderPct();
+      renderBodyAll();
+    }
+
+    function showStorageBannerIfNeeded() {
+      const ok = storageWorks();
+      const b = document.getElementById('storageBanner');
+      if (!ok) {
+        b.style.display = 'block';
+        b.textContent = 'Aviso: el almacenamiento local no está disponible (posible modo privado). No se guardarán tus datos.';
+      }
+    }
+
+    showStorageBannerIfNeeded();
+    loadAll();
+    initUIAfterLoad();
+  </script>
+
+  <div id="exportModal">
+    <div class="box">
+      <div class="top">
+        <div>
+          <div class="title" id="exportTitle">Exportar</div>
+          <div class="muted2" id="exportFileName"></div>
+        </div>
+        <button class="btn secondary" onclick="closeExportModal()">Cerrar</button>
+      </div>
+      <textarea id="exportText" spellcheck="false"></textarea>
+      <div class="btn-row" style="margin-top:10px;">
+        <button class="btn" onclick="copyExportText()">Copiar</button>
+        <button class="btn secondary" onclick="shareExportText()">Compartir</button>
+      </div>
+      <div class="hint" id="exportHint"></div>
+    </div>
+  </div>
+
+</body>
+</html>
